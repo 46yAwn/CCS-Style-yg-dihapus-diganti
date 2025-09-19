@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <style>
-        .container {
-          display: grid;
-          grid-template-columns: auto auto auto auto auto auto;
-          padding: 10px;
-        }
+<html>
+  <head>
+    <title>Navigation Menu</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 10px; 
+        padding: 10px;
+        background-color: #f1f1f1;
+      }
 
-        .container > div {
-          background-color: #f1f1f1;
-          padding: 20px;
-          font-size: 30px;
-          text-align: center;
-        }
-        
-        .button {
-          border: none;
-          color: white;
-          padding: 10px 25px;
-          text-align: center;
-          text-decoration: none;
-          font-size: 16px;
-          transition-duration: 0.4s;
-          cursor: pointer;
-        }
+      .button {
+        display: block; 
+        border: none;
+        color: black;
+        background-color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
 
-        .button {
-          background-color: white; 
-          color: black; 
-        }
+      .button:hover {
+        background-color: #04AA6D;
+        color: white;
+      }
+    </style>
+  </head>
 
-        .button:hover {
-          background-color: #04AA6D;
-          color: white;
-        }
-      </style>
-    </head>
-
-    <body>
-      <div class= container>
-        <button class="button">Services</button>
-          <a href="#"></a>
-        <button class="button">Skills</button>
-          <a href="#"></a>
-        <button class="button">Education</button>
-          <a href="#"></a>
-        <button class="button">Experiences</button>
-          <a href="#"></a>
-        <button class="button">Contact</button>
-          <a href="#"></a>
-      </div>
-    </body>
-  </html>
+  <body>
+    <nav class="container">
+      <a href="#services" class="button">Services</a>
+      <a href="#skills" class="button">Skills</a>
+      <a href="#education" class="button">Education</a>
+      <a href="#experiences" class="button">Experiences</a>
+      <a href="#contact" class="button">Contact</a>
+    </nav>
+  </body>
+</html>
